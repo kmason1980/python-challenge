@@ -66,6 +66,17 @@ date_most, amnt_most = sorted_changes[-1]
 print(date_least, amnt_least)
 print(date_most, amnt_most)
 
+#export as text file
+output_path = os.path.join("output" , "new.txt")
 
-
+with open(output_path, 'w', newline='') as txtfile:
+    print(n_months)
+    print(net_profit)
+    print(average_profit_loss)
+    print(avg_change)
+    print(date_least, amnt_least)
+    print(date_most, amnt_most)
     
+output_path = "desktop/output.txt"
+
+print(output_path) 
