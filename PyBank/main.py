@@ -67,16 +67,13 @@ print(date_least, amnt_least)
 print(date_most, amnt_most)
 
 #export as text file
-output_path = os.path.join("output" , "new.txt")
+output_path = os.path.join("/Users/kerimason/Desktop/pythonchallenge/PyBank/Output/PyBank_Solved.txt")
 
 with open(output_path, 'w', newline='') as txtfile:
-    print(n_months)
-    print(net_profit)
-    print(average_profit_loss)
-    print(avg_change)
-    print(date_least, amnt_least)
-    print(date_most, amnt_most)
-    
-output_path = "desktop/output.txt"
+    txtfile.write("Number of Months: " + str(n_months)
+    txtfile.write("Total: " + str(net_profit)
+    txtfile.write("Average Change: " + str(avg_change)
+    txtfile.write("Greatest Increase in Profits: " + str(date_most, amnt_most)
+    txtfile.write("Greated Decrease in Profits: " + str(date_least, amnt_least)
 
 print(output_path) 
