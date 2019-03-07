@@ -70,10 +70,10 @@ print(date_most, amnt_most)
 output_path = os.path.join("/Users/kerimason/Desktop/pythonchallenge/PyBank/Output/PyBank_Solved.txt")
 
 with open(output_path, 'w', newline='') as txtfile:
-    txtfile.write("Number of Months: " + str(n_months)
-    txtfile.write("Total: " + str(net_profit)
-    txtfile.write("Average Change: " + str(avg_change)
-    txtfile.write("Greatest Increase in Profits: " + str(date_most, amnt_most)
-    txtfile.write("Greated Decrease in Profits: " + str(date_least, amnt_least)
+    txtfile.write(f"Number of Months: {n_months}\n")
+    txtfile.write(f"Total: {net_profit}\n")
+    txtfile.write(f"Average Change: {avg_change}\n")
+    txtfile.write(f"Greatest Increase in Profits: {date_most} {amnt_most}\n")
+    txtfile.write(f"Greated Decrease in Profits: {date_least} {amnt_least} \n")
 
 print(output_path) 
